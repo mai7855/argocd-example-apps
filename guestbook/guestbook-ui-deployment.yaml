@@ -4,6 +4,8 @@ metadata:
   name: guestbook-ui
 spec:
   replicas: 3
+  strategy:
+      type: Recreate
   revisionHistoryLimit: 3
   selector:
     matchLabels:
